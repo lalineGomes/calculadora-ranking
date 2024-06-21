@@ -5,22 +5,22 @@ function calcular(vitorias, derrotas) {
   return vitorias - derrotas;
 }
 
-function rankear(vitorias) {
+function rankear(saldo) {
   let nivel;
 
-  if (vitorias < 10) {
+  if (saldo < 10) {
     nivel = "Ferro";
-  } else if (vitorias >= 11 && vitorias <= 20) {
+  } else if (saldo >= 11 && saldo <= 20) {
     nivel = "Bronze";
-  } else if (vitorias >= 21 && vitorias <= 50) {
+  } else if (saldo >= 21 && saldo <= 50) {
     nivel = "Prata";
-  } else if (vitorias >= 51 && vitorias <= 80) {
+  } else if (saldo >= 51 && saldo <= 80) {
     nivel = "Ouro";
-  } else if (vitorias >= 81 && vitorias <= 90) {
+  } else if (saldo >= 81 && saldo <= 90) {
     nivel = "Diamante";
-  } else if (vitorias >= 91 && vitorias <= 100) {
+  } else if (saldo >= 91 && saldo <= 100) {
     nivel = "Lendário";
-  } else if (vitorias >= 101) {
+  } else if (saldo >= 101) {
     nivel = "Bronze";
   }
 
