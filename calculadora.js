@@ -1,4 +1,4 @@
-const vitorias = 1000;
+const vitorias = 10;
 const derrotas = 9;
 
 function calcular(vitorias, derrotas) {
@@ -29,7 +29,7 @@ function rankear(saldo) {
 
 function calcularRanking(vitorias, derrotas) {
   const saldo = calcular(vitorias, derrotas);
-  const nivel = rankear(vitorias);
+  const nivel = rankear(saldo);
   console.log(`O Herói tem de saldo de ${saldo} está no nível de ${nivel}`);
 }
 
